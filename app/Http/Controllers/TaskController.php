@@ -35,7 +35,17 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'category_id' => 'required'
+        ]);
+
+        $task = new Task();
+        $task->title = $request->title;
+        $task->category_id = $request->category_id;
+        $task->save();
+
+        return back();
     }
 
     /**
@@ -69,7 +79,16 @@ class TaskController extends Controller
      */
     public function update(Request $request, Task $task)
     {
-        //
+        // $request->validate([
+        //     'completed' => 'boolean'
+        // ]);
+
+        $completed = $request->completed == 'on' ? 1 : 0;
+
+        $task->completed = $completed;
+        $task->save();
+
+        return redirect('/');
     }
 
     /**
@@ -80,6 +99,20 @@ class TaskController extends Controller
      */
     public function destroy(Task $task)
     {
-        //
+        $task->delete();
+
+        return redirect('/');
+    }
+
+    /**
+     * delete_all
+     *
+     * @return void
+     */
+    public function delete_all()
+    {
+        Task::truncate();
+
+        return redirect('/');
     }
 }

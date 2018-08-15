@@ -1,0 +1,851 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "linea-basic-10";
+  src: url(/fonts/linea-basic-10.eot?e4de528c00da0c081906c3caea289f0f);
+  src: url(/fonts/linea-basic-10.eot?e4de528c00da0c081906c3caea289f0f?#iefix) format("embedded-opentype"), url(/fonts/linea-basic-10.woff?61f3a8a387a64abfc0535cd0813cd71a) format("woff"), url(/fonts/linea-basic-10.ttf?e6763f008205c55db623cdf68bbd581f) format("truetype"), url(/fonts/linea-basic-10.svg?177764eadf43efc393ebb98329a774b2#linea-basic-10) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "linea-basic-10" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "linea-basic-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-basic-accelerator:before {
+  content: "a";
+}
+
+.icon-basic-alarm:before {
+  content: "b";
+}
+
+.icon-basic-anchor:before {
+  content: "c";
+}
+
+.icon-basic-anticlockwise:before {
+  content: "d";
+}
+
+.icon-basic-archive:before {
+  content: "e";
+}
+
+.icon-basic-archive-full:before {
+  content: "f";
+}
+
+.icon-basic-ban:before {
+  content: "g";
+}
+
+.icon-basic-battery-charge:before {
+  content: "h";
+}
+
+.icon-basic-battery-empty:before {
+  content: "i";
+}
+
+.icon-basic-battery-full:before {
+  content: "j";
+}
+
+.icon-basic-battery-half:before {
+  content: "k";
+}
+
+.icon-basic-bolt:before {
+  content: "l";
+}
+
+.icon-basic-book:before {
+  content: "m";
+}
+
+.icon-basic-book-pen:before {
+  content: "n";
+}
+
+.icon-basic-book-pencil:before {
+  content: "o";
+}
+
+.icon-basic-bookmark:before {
+  content: "p";
+}
+
+.icon-basic-calculator:before {
+  content: "q";
+}
+
+.icon-basic-calendar:before {
+  content: "r";
+}
+
+.icon-basic-cards-diamonds:before {
+  content: "s";
+}
+
+.icon-basic-cards-hearts:before {
+  content: "t";
+}
+
+.icon-basic-case:before {
+  content: "u";
+}
+
+.icon-basic-chronometer:before {
+  content: "v";
+}
+
+.icon-basic-clessidre:before {
+  content: "w";
+}
+
+.icon-basic-clock:before {
+  content: "x";
+}
+
+.icon-basic-clockwise:before {
+  content: "y";
+}
+
+.icon-basic-cloud:before {
+  content: "z";
+}
+
+.icon-basic-clubs:before {
+  content: "A";
+}
+
+.icon-basic-compass:before {
+  content: "B";
+}
+
+.icon-basic-cup:before {
+  content: "C";
+}
+
+.icon-basic-diamonds:before {
+  content: "D";
+}
+
+.icon-basic-display:before {
+  content: "E";
+}
+
+.icon-basic-download:before {
+  content: "F";
+}
+
+.icon-basic-exclamation:before {
+  content: "G";
+}
+
+.icon-basic-eye:before {
+  content: "H";
+}
+
+.icon-basic-eye-closed:before {
+  content: "I";
+}
+
+.icon-basic-female:before {
+  content: "J";
+}
+
+.icon-basic-flag1:before {
+  content: "K";
+}
+
+.icon-basic-flag2:before {
+  content: "L";
+}
+
+.icon-basic-floppydisk:before {
+  content: "M";
+}
+
+.icon-basic-folder:before {
+  content: "N";
+}
+
+.icon-basic-folder-multiple:before {
+  content: "O";
+}
+
+.icon-basic-gear:before {
+  content: "P";
+}
+
+.icon-basic-geolocalize-01:before {
+  content: "Q";
+}
+
+.icon-basic-geolocalize-05:before {
+  content: "R";
+}
+
+.icon-basic-globe:before {
+  content: "S";
+}
+
+.icon-basic-gunsight:before {
+  content: "T";
+}
+
+.icon-basic-hammer:before {
+  content: "U";
+}
+
+.icon-basic-headset:before {
+  content: "V";
+}
+
+.icon-basic-heart:before {
+  content: "W";
+}
+
+.icon-basic-heart-broken:before {
+  content: "X";
+}
+
+.icon-basic-helm:before {
+  content: "Y";
+}
+
+.icon-basic-home:before {
+  content: "Z";
+}
+
+.icon-basic-info:before {
+  content: "0";
+}
+
+.icon-basic-ipod:before {
+  content: "1";
+}
+
+.icon-basic-joypad:before {
+  content: "2";
+}
+
+.icon-basic-key:before {
+  content: "3";
+}
+
+.icon-basic-keyboard:before {
+  content: "4";
+}
+
+.icon-basic-laptop:before {
+  content: "5";
+}
+
+.icon-basic-life-buoy:before {
+  content: "6";
+}
+
+.icon-basic-lightbulb:before {
+  content: "7";
+}
+
+.icon-basic-link:before {
+  content: "8";
+}
+
+.icon-basic-lock:before {
+  content: "9";
+}
+
+.icon-basic-lock-open:before {
+  content: "!";
+}
+
+.icon-basic-magic-mouse:before {
+  content: "\"";
+}
+
+.icon-basic-magnifier:before {
+  content: "#";
+}
+
+.icon-basic-magnifier-minus:before {
+  content: "$";
+}
+
+.icon-basic-magnifier-plus:before {
+  content: "%";
+}
+
+.icon-basic-mail:before {
+  content: "&";
+}
+
+.icon-basic-mail-multiple:before {
+  content: "'";
+}
+
+.icon-basic-mail-open:before {
+  content: "(";
+}
+
+.icon-basic-mail-open-text:before {
+  content: ")";
+}
+
+.icon-basic-male:before {
+  content: "*";
+}
+
+.icon-basic-map:before {
+  content: "+";
+}
+
+.icon-basic-message:before {
+  content: ",";
+}
+
+.icon-basic-message-multiple:before {
+  content: "-";
+}
+
+.icon-basic-message-txt:before {
+  content: ".";
+}
+
+.icon-basic-mixer2:before {
+  content: "/";
+}
+
+.icon-basic-mouse:before {
+  content: ":";
+}
+
+.icon-basic-notebook:before {
+  content: ";";
+}
+
+.icon-basic-notebook-pen:before {
+  content: "<";
+}
+
+.icon-basic-notebook-pencil:before {
+  content: "=";
+}
+
+.icon-basic-paperplane:before {
+  content: ">";
+}
+
+.icon-basic-pencil-ruler:before {
+  content: "?";
+}
+
+.icon-basic-pencil-ruler-pen:before {
+  content: "@";
+}
+
+.icon-basic-photo:before {
+  content: "[";
+}
+
+.icon-basic-picture:before {
+  content: "]";
+}
+
+.icon-basic-picture-multiple:before {
+  content: "^";
+}
+
+.icon-basic-pin1:before {
+  content: "_";
+}
+
+.icon-basic-pin2:before {
+  content: "`";
+}
+
+.icon-basic-postcard:before {
+  content: "{";
+}
+
+.icon-basic-postcard-multiple:before {
+  content: "|";
+}
+
+.icon-basic-printer:before {
+  content: "}";
+}
+
+.icon-basic-question:before {
+  content: "~";
+}
+
+.icon-basic-rss:before {
+  content: "\\";
+}
+
+.icon-basic-server:before {
+  content: "\E000";
+}
+
+.icon-basic-server2:before {
+  content: "\E001";
+}
+
+.icon-basic-server-cloud:before {
+  content: "\E002";
+}
+
+.icon-basic-server-download:before {
+  content: "\E003";
+}
+
+.icon-basic-server-upload:before {
+  content: "\E004";
+}
+
+.icon-basic-settings:before {
+  content: "\E005";
+}
+
+.icon-basic-share:before {
+  content: "\E006";
+}
+
+.icon-basic-sheet:before {
+  content: "\E007";
+}
+
+.icon-basic-sheet-multiple:before {
+  content: "\E008";
+}
+
+.icon-basic-sheet-pen:before {
+  content: "\E009";
+}
+
+.icon-basic-sheet-pencil:before {
+  content: "\E00A";
+}
+
+.icon-basic-sheet-txt:before {
+  content: "\E00B";
+}
+
+.icon-basic-signs:before {
+  content: "\E00C";
+}
+
+.icon-basic-smartphone:before {
+  content: "\E00D";
+}
+
+.icon-basic-spades:before {
+  content: "\E00E";
+}
+
+.icon-basic-spread:before {
+  content: "\E00F";
+}
+
+.icon-basic-spread-bookmark:before {
+  content: "\E010";
+}
+
+.icon-basic-spread-text:before {
+  content: "\E011";
+}
+
+.icon-basic-spread-text-bookmark:before {
+  content: "\E012";
+}
+
+.icon-basic-star:before {
+  content: "\E013";
+}
+
+.icon-basic-tablet:before {
+  content: "\E014";
+}
+
+.icon-basic-target:before {
+  content: "\E015";
+}
+
+.icon-basic-todo:before {
+  content: "\E016";
+}
+
+.icon-basic-todo-pen:before {
+  content: "\E017";
+}
+
+.icon-basic-todo-pencil:before {
+  content: "\E018";
+}
+
+.icon-basic-todo-txt:before {
+  content: "\E019";
+}
+
+.icon-basic-todolist-pen:before {
+  content: "\E01A";
+}
+
+.icon-basic-todolist-pencil:before {
+  content: "\E01B";
+}
+
+.icon-basic-trashcan:before {
+  content: "\E01C";
+}
+
+.icon-basic-trashcan-full:before {
+  content: "\E01D";
+}
+
+.icon-basic-trashcan-refresh:before {
+  content: "\E01E";
+}
+
+.icon-basic-trashcan-remove:before {
+  content: "\E01F";
+}
+
+.icon-basic-upload:before {
+  content: "\E020";
+}
+
+.icon-basic-usb:before {
+  content: "\E021";
+}
+
+.icon-basic-video:before {
+  content: "\E022";
+}
+
+.icon-basic-watch:before {
+  content: "\E023";
+}
+
+.icon-basic-webpage:before {
+  content: "\E024";
+}
+
+.icon-basic-webpage-img-txt:before {
+  content: "\E025";
+}
+
+.icon-basic-webpage-multiple:before {
+  content: "\E026";
+}
+
+.icon-basic-webpage-txt:before {
+  content: "\E027";
+}
+
+.icon-basic-world:before {
+  content: "\E028";
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+}
+
+.header {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), to(#7ed56f));
+  background-image: linear-gradient(to bottom right, #28b485, #7ed56f);
+  color: #fff;
+  padding: 1rem;
+}
+
+.header .day {
+  font-size: 6rem;
+  margin-left: 4rem;
+  opacity: .6;
+}
+
+.header .quote {
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  text-align: center;
+}
+
+.header .status {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 4rem;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+
+.header .status__completed {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  width: 8rem;
+}
+
+.header .status__completed--label {
+  display: inline-block;
+  position: relative;
+  top: 2rem;
+  left: -4rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.header .status__divider {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translate(-94%, 15%);
+          transform: translate(-94%, 15%);
+  font-size: 10rem;
+  font-weight: 400;
+  opacity: .6;
+}
+
+.header .status__total {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.header .delete_all {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: .5;
+}
+
+.create__task {
+  padding: .5rem 1.5rem;
+  text-align: center;
+}
+
+.create__task form input,
+.create__task form select,
+.create__task form option {
+  padding: .5rem 1.5rem;
+  height: 4rem;
+  border: 2px solid #55c57a;
+  background-color: #fff;
+  color: #55c57a;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  border-radius: 6px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.create__task form input[type=text] {
+  width: 40rem;
+  text-transform: none;
+}
+
+.create__task form input[type=submit] {
+  cursor: pointer;
+}
+
+.task__card {
+  position: relative;
+  -webkit-perspective: 450rem;
+          perspective: 450rem;
+  margin: 2rem;
+  min-width: 30rem;
+  height: 20rem;
+}
+
+.task__card__side {
+  text-align: center;
+  border-radius: .6rem;
+  -webkit-box-shadow: 0 0 2.5rem 0.5rem rgba(0, 0, 0, 0.05), 0rem 0rem 1.5rem 0.5rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 2.5rem 0.5rem rgba(0, 0, 0, 0.05), 0rem 0rem 1.5rem 0.5rem rgba(0, 0, 0, 0.05);
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.task__card--front {
+  height: 100%;
+}
+
+.task__card--front i {
+  font-size: 4rem;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.task__card--front h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #55c57a;
+}
+
+.task__card--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  height: 100%;
+  position: relative;
+}
+
+.task__card--back h3 {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+
+.task__card--back input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: 2px solid #fff;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  position: absolute;
+}
+
+.task__card--back input:checked:after {
+  content: '\2714';
+  position: absolute;
+  color: #fff;
+  font-size: 6rem;
+  top: -2.5rem;
+}
+
+.task__card--back .remove {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+}
+
+.task__card--back .remove button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.task__card--back .remove button i {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task__card:hover .task__card--front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.task__card:hover .task__card--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.completed {
+  opacity: .3;
+}
+
+.tasks {
+  width: 80%;
+  margin: 6rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tasks > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+

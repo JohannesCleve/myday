@@ -1,0 +1,70 @@
+.header {
+    position: relative;
+    background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary-light);
+    color: $color-white;
+    padding: 1rem;
+
+    .day {
+        font-size: 6rem;
+        margin-left: 4rem;
+        opacity: .6;
+    }
+
+    .quote {
+        font-size: 2rem;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+        text-align: center;
+    }
+
+
+    .status {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        font-size: 4rem;
+        transform: translateY(-5rem);
+
+        &__completed {
+            display: inline-block;
+            position: relative;
+            text-align: right;
+            width: 8rem;
+
+            &--label {
+                display: inline-block;
+                position: relative;
+                top: 2rem;
+                left: -4rem;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        &__divider {
+            display: inline-block;
+            position: relative;
+            transform: translate(-94%, 15%);
+            font-size: 10rem;
+            font-weight: 400;
+            opacity: .6;
+        }
+
+        &__total {
+            display: inline-block;
+            position: relative;
+            transform: translate(-50%, 0%);
+        }
+    }
+
+    .delete_all {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        color: $color-white;
+        text-decoration: none;
+        opacity: .5;
+    }
+}

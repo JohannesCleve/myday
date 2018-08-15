@@ -1,0 +1,10 @@
+.tasks {
+    width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        flex-grow: 1;
+    }
+}
