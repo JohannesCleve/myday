@@ -3,7 +3,9 @@
         @foreach ($errors->all() as $error)
             <span>{{ $error }}</span>
         @endforeach
-    @else
+    @elseif(session('status'))
         {{ session('status') }}
+    @else
+        Welcome to your dayplanner!
     @endif
 </div>

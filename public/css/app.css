@@ -697,8 +697,8 @@ body:hover .flash_message {
   font-size: 2rem;
   -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 10.8s;
-  transition: all 10.8s;
+  -webkit-transition: all 4.8s ease-in;
+  transition: all 4.8s ease-in;
 }
 
 .header {
