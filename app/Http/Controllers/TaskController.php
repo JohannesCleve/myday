@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Task;
 use Illuminate\Http\Request;
 
+//use Symfony\Component\HttpFoundation\Request;
+
 class TaskController extends Controller
 {
     /**
@@ -45,7 +47,8 @@ class TaskController extends Controller
         $task->category_id = $request->category_id;
         $task->save();
 
-        return back();
+        $request->session()->flash('status', 'Task successfully created');
+        return redirect('/');
     }
 
     /**
@@ -88,6 +91,7 @@ class TaskController extends Controller
         $task->completed = $completed;
         $task->save();
 
+        $request->session()->flash('status', 'Status successfully updated');
         return redirect('/');
     }
 
@@ -97,10 +101,11 @@ class TaskController extends Controller
      * @param  \App\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Task $task)
+    public function destroy(Request $request, Task $task)
     {
         $task->delete();
 
+        $request->session()->flash('status', 'Task successfully deleted');
         return redirect('/');
     }
 
@@ -109,10 +114,11 @@ class TaskController extends Controller
      *
      * @return void
      */
-    public function delete_all()
+    public function delete_all(Request $request)
     {
         Task::truncate();
 
+        $request->session()->flash('status', 'All tasks successfully deleted');
         return redirect('/');
     }
 }

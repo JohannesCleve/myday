@@ -4,8 +4,9 @@
 @import "base/icon_base";
 @import "base/typography";
 
-@import "components/header";
 @import "components/create__task";
+@import "components/flash_message";
+@import "components/header";
 @import "components/task__card";
 
 @import "pages/index"; 

@@ -597,6 +597,110 @@ body {
   color: #777;
 }
 
+.create__task {
+  padding: .5rem 1.5rem;
+  text-align: center;
+}
+
+.create__task form input,
+.create__task form select,
+.create__task form option {
+  padding: .5rem 1.5rem;
+  height: 4rem;
+  border: 2px solid #55c57a;
+  background-color: #fff;
+  color: #55c57a;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  border-radius: 6px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.create__task form input[type=text] {
+  width: 40rem;
+  text-transform: none;
+}
+
+.create__task form input[type=text]::-webkit-input-placeholder {
+  color: #55c57a;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.create__task form input[type=text]:-ms-input-placeholder {
+  color: #55c57a;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.create__task form input[type=text]::-ms-input-placeholder {
+  color: #55c57a;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.create__task form input[type=text]::placeholder {
+  color: #55c57a;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.create__task form input[type=text]:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.create__task form input[type=text]:focus:-ms-input-placeholder {
+  color: #fff;
+}
+
+.create__task form input[type=text]:focus::-ms-input-placeholder {
+  color: #fff;
+}
+
+.create__task form input[type=text]:focus::placeholder {
+  color: #fff;
+}
+
+.create__task form input[type=submit] {
+  cursor: pointer;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.create__task form input[type=submit]:hover {
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.create__task form input[type=submit]:active {
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+body:hover .flash_message {
+  opacity: 0;
+}
+
+.flash_message {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 1rem;
+  z-index: 100;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to bottom, #ffb900, #ff7730);
+  color: #fff;
+  padding: 2rem 6rem;
+  font-size: 2rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 10.8s;
+  transition: all 10.8s;
+}
+
 .header {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), to(#7ed56f));
@@ -669,35 +773,6 @@ body {
   color: #fff;
   text-decoration: none;
   opacity: .5;
-}
-
-.create__task {
-  padding: .5rem 1.5rem;
-  text-align: center;
-}
-
-.create__task form input,
-.create__task form select,
-.create__task form option {
-  padding: .5rem 1.5rem;
-  height: 4rem;
-  border: 2px solid #55c57a;
-  background-color: #fff;
-  color: #55c57a;
-  font-size: 1.4rem;
-  margin-right: 1rem;
-  border-radius: 6px;
-  outline: none;
-  text-transform: uppercase;
-}
-
-.create__task form input[type=text] {
-  width: 40rem;
-  text-transform: none;
-}
-
-.create__task form input[type=submit] {
-  cursor: pointer;
 }
 
 .task__card {

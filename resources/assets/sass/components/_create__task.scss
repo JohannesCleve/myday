@@ -19,11 +19,29 @@
 
         input[type=text] {
             width: 40rem;
-            text-transform: none;
+            text-transform: none;  
+
+            &::placeholder {
+                color: $color-primary;
+                transition: all .8s;
+            }
+
+            &:focus::placeholder {
+                color: $color-white;
+            }
         }
 
         input[type=submit] {
             cursor: pointer;
+            transition: all .8s;
+        }
+
+        input[type=submit]:hover {
+            box-shadow: .5rem .5rem .5rem rgba($color-black, .15);
+        }
+
+        input[type=submit]:active {
+            box-shadow: .2rem .2rem .2rem rgba($color-black, .15);
         }
     }
 }

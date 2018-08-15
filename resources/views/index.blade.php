@@ -8,6 +8,7 @@
         <title>MyDay</title>
     </head>
     <body>
+        @include('flash_message')
         <header class="header">
             <p class="day">{{ today()->format('l') }}</p>
             <div class="status">
